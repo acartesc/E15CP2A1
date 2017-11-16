@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(version: 20171115230717) do
     t.text "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "user_id_id"
-    t.index ["user_id_id"], name: "index_histories_on_user_id_id"
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_histories_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
